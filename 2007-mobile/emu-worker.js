@@ -1,5 +1,5 @@
 /* The worker owns all guest state. Presentation never drives the guest clock. */
-importScripts("./dist/emu.js", "./seed-jit.js");
+importScripts("https://cdn.jsdelivr.net/gh/daniil-athyx/athyx-apps@master/2007-mobile/dist/emu.js", "https://cdn.jsdelivr.net/gh/daniil-athyx/athyx-apps@master/2007-mobile/seed-jit.js");
 let jit;
 let module, api, paused = true, started = false, scheduled = false;
 let framePointer, widthPointer, heightPointer, serialPointer, contactsPointer, audioPointer;
@@ -151,7 +151,7 @@ async function openLocked() {
 async function start(message) {
   if (started) throw new Error('Worker already initialized');
   started = true;
-  const {assetBytes} = await import("./assets.js");
+  const {assetBytes} = await import("https://cdn.jsdelivr.net/gh/daniil-athyx/athyx-apps@master/2007-mobile/assets.js");
   const response = await fetch('manifest.json', {cache:'no-cache'});
   if (!response.ok) throw new Error(`Could not load phone manifest (${response.status})`);
   const manifest = await response.json();
@@ -180,7 +180,7 @@ async function start(message) {
   if (!snapshot && manifest.snapshot) snapshot = await load(manifest.snapshot, 'your iPhone');
   if (!snapshot) rootfs = await load(manifest.rootfs, 'disk');
   send('loading', {message:'Waking your iPhone…'});
-  module = await createEmu({locateFile:path => new URL(path, "./dist/").href,
+  module = await createEmu({locateFile:path => new URL(path, "https://cdn.jsdelivr.net/gh/daniil-athyx/athyx-apps@master/2007-mobile/dist/").href,
     printErr:text => send('log', {message:text})});
   const k = alloc(kernel), d = alloc(tree), r = rootfs ? alloc(rootfs) : 0;
   try {
