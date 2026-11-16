@@ -76,5 +76,11 @@
     "file": "twitch.html",
     "icon": "icons/twitch.png",
     "tag": "Social"
+  },
+  {
+    "name": "VS Code",
+    "file": "vscode.html",
+    "icon": "icons/vscode.svg",
+    "tag": "Developer"
   }
 ]
