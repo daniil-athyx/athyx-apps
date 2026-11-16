@@ -152,7 +152,7 @@ async function start(message) {
   if (started) throw new Error('Worker already initialized');
   started = true;
   const {assetBytes} = await import("https://cdn.jsdelivr.net/gh/daniil-athyx/athyx-apps@master/2007-mobile/assets.js");
-  const response = await fetch('manifest.json', {cache:'no-cache'});
+  const response = await fetch('https://cdn.jsdelivr.net/gh/daniil-athyx/athyx-apps@master/2007-mobile/manifest.json', {cache:'no-cache'});
   if (!response.ok) throw new Error(`Could not load phone manifest (${response.status})`);
   const manifest = await response.json();
   const downloads = [manifest.kernel, manifest.devicetree,
