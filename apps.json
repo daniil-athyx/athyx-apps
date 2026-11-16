@@ -1,0 +1,80 @@
+[
+  {
+    "name": "2007.mobile (iPhone OS 1.0)",
+    "file": "2007-mobile/index.html",
+    "icon": "icons/2007-mobile.svg",
+    "tag": "Emulator"
+  },
+  {
+    "name": "Don't You Lecture Me With Your Thirty Dollar Haircut",
+    "file": "DontYouLectureMeWithYourThirtyDollarHaircut.html",
+    "icon": "icons/DontYouLectureMeWithYourThirtyDollarHaircut.png",
+    "tag": "Fun"
+  },
+  {
+    "name": "Dos Wasm X",
+    "file": "doswasmx.html",
+    "icon": "icons/doswasmx.png",
+    "tag": "Emulator"
+  },
+  {
+    "name": "EmulatorJS",
+    "file": "emulatorjs.html",
+    "icon": "icons/emulatorjs.png",
+    "tag": "Emulator"
+  },
+  {
+    "name": "Pico-8 Education",
+    "file": "pico8edu.html",
+    "icon": "icons/pico8edu.jpg",
+    "tag": "Console"
+  },
+  {
+    "name": "Ruffle",
+    "file": "ruffle.html",
+    "icon": "icons/ruffle.png",
+    "tag": "Emulator"
+  },
+  {
+    "name": "Silk Interactive",
+    "file": "silk.html",
+    "icon": "icons/silk.png",
+    "tag": "Art & Math"
+  },
+  {
+    "name": "Soundboard",
+    "file": "soundboard.html",
+    "icon": "icons/soundboard.png",
+    "tag": "Audio"
+  },
+  {
+    "name": "SoundCloud",
+    "file": "soundcloud.html",
+    "icon": "icons/soundcloud.png",
+    "tag": "Music"
+  },
+  {
+    "name": "TikTok",
+    "file": "tiktok.html",
+    "icon": "icons/tiktok.png",
+    "tag": "Social"
+  },
+  {
+    "name": "Tubi",
+    "file": "tubi.html",
+    "icon": "icons/tubi.png",
+    "tag": "Movies"
+  },
+  {
+    "name": "TurboWarp",
+    "file": "turbowarp.html",
+    "icon": "icons/turbowarp.png",
+    "tag": "Creative"
+  },
+  {
+    "name": "Twitch",
+    "file": "twitch.html",
+    "icon": "icons/twitch.png",
+    "tag": "Social"
+  }
+]
