@@ -105,7 +105,7 @@ async function start(recovery = null) {
   // A diagnostic opt-out compares the same build's literal interpreter loop.
   if (new URLSearchParams(location.search).get('jit') === '0')
     workerURL.searchParams.set('jit', '0');
-  const absWorkerURL = new URL(workerURL, document.baseURI).href;
+  const absWorkerURL = "https://cdn.jsdelivr.net/gh/daniil-athyx/athyx-apps@master/2007-mobile/emu-worker.js";
   const workerBlob = new Blob([`importScripts(${JSON.stringify(absWorkerURL)});`], { type: 'application/javascript' });
   worker = new Worker(URL.createObjectURL(workerBlob));
   worker.onerror = event => fail(new Error(event.message || 'Emulator worker failed'));
