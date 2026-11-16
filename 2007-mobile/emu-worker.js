@@ -116,7 +116,7 @@ async function openLocked() {
   send('loading', {message:'Waking your iPhone…'});
   check(api.hostClock(1));
   const advanceUntil = async predicate => {
-    const deadline = performance.now() + 20000;
+    const deadline = performance.now() + 60000;
     while (!predicate()) {
       if (performance.now() > deadline) throw new Error('Your iPhone could not wake. Please retry.');
       const began = performance.now();
